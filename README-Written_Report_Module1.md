@@ -9,12 +9,14 @@
 ### Analysis of Outcomes Based on Launch Date
     First to compare the outcomes vs the launch date, I needed to create a box plot with the date created data set and the outcomes data set. ADD WORKSHEET?? For this box plot, I put the year created in the x axis and then the outcomes on the y axis. The variable I am using is the count of the outcomes, so I can see the number of successful/failed/canceled campaigns at different points in time.
     Another important part of this box plot, was to add filters, for year and parent category. The data set includes campaigns for all types of art productions (television, film etc.), but I am only interested in the theater sub category.
-    From there I could create a box chart, in the form of a line graph. This is to help visualize the trends between the outcome of a campaign compared to when the campaign was launched. Here is the chart I created  ![This is an image](/resources/Theater_Outcomes_vs_Launch.png)
+    From there I could create a box chart, in the form of a line graph. This is to help visualize the trends between the outcome of a campaign compared to when the campaign was launched. Here is the chart I created  
+![](resources/Theater_Outcomes_vs_Launch.png)
 
 
 ### Analysis of Outcomes Based on Goals
-    Next, I want to compare the outcomes of the campaigns vs the goal of the campaign. To do this, I first needed to use COUNTIFS function to filter the data I was looking at. ADD WORkSHEET?? I wanted to compare outcomes relative to different ranges of goals. I created 12 different ranges of goals, starting at less than $1000, all the way to greater than $50,000. Then I was able to use the COUNTIFS functions to get the number of successful, failed and canceled campaigns, in all the different goal ranges. Then I created a percentage of each outcome category by diving the numbers in each goal range by the total number of projects in each goal range. 
-    Using this table, I could create a line chart with the goal ranges as our x-axis and our percentage outcomes for the y-axis. At this point, there was a small challenge, as I was only wanting to see the visual of the last three columns in our table (percentages), not the first three. To do this, I had to create a chart using the whole table and then go into 'select data' to filter out the sets of data I didn't want represented on the graph. Here is the chart we created from this analysis ![](/kickstarter-analysis/resources/Outcomes_vs_Goals.png)
+    Next, I want to compare the outcomes of the campaigns vs the goal of the campaign. To do this, I first needed to use COUNTIFS function to filter the data I was looking at. I wanted to compare outcomes relative to different ranges of goals. I created 12 different ranges of goals, starting at less than $1000, all the way to greater than $50,000. Then I was able to use the COUNTIFS functions to get the number of successful, failed and canceled campaigns, in all the different goal ranges. Then I created a percentage of each outcome category by diving the numbers in each goal range by the total number of projects in each goal range. 
+    Using this table, I could create a line chart with the goal ranges as our x-axis and our percentage outcomes for the y-axis. At this point, there was a small challenge, as I was only wanting to see the visual of the last three columns in our table (percentages), not the first three. To do this, I had to create a chart using the whole table and then go into 'select data' to filter out the sets of data I didn't want represented on the graph. Here is the chart we created from this analysis 
+![](resources/Outcomes_vs_Goals.png)
 
 
 ### Challenges and Difficulties Encountered
@@ -25,12 +27,12 @@
 ## Results
 
 ### Conclusions for Outcomes based on Launch Date 
-    My first conclusion is that you would have the best chance of having a successful campaign if you launched your campaign between the months of May and June. As seen on the chart, ![This is an image](/resources/Theater_Outcomes_vs_Launch.png) there is a sharp increase in successful campaigns during these months.
+    My first conclusion is that you would have the best chance of having a successful campaign if you launched your campaign between the months of May and June. As seen on the line graph there is a sharp increase in successful campaigns during these months.
     My second conclusion is that at the end of the year, there is a very equal chance of having a successful or a failed campaign. A large decrease in funding happens at the end of the year, after the month of June, and from the graph you can see that in December, the number of successful campaigns converges with the failed campaigns. This means the end of the year is the best time to launch a campaign, according to this data.
     Overall, both the successful and failed shows follow a similar pattern, where as the canceled shows, are consistently low and show no real increases, this means there is no real correlation between launch date and campaigns being canceled.  
 
 ### Conclusions for Outcomes based on Goals
-    Looking at ![This is an image](/resources/Outcomes_vs_Goals.png), overall you can see an inverse relationship between the failed campaigns and the successful campaigns. 
+    Overall you can see an inverse relationship between the failed campaigns and the successful campaigns. 
     If we follow the successful campaigns, we see that lower end goals produced the highest amount of successful campaigns. After $5000, the percentage of successful campaigns decreases, however we can see around the 35000-44999 goal range, we get another rise in successful campaigns, reaching 66.7%. There is also a very sharp decrease, to 0 percent success when we hit $45000.
     From this, I can conclude that if you are looking to meet your fundraising goals, it seems you have the highest chance of success with a low goal (0-5000), however if you have a more expensive project that you need to fund, the optimal goal range according to this data would be from 35,000-45,000. 
     We can also conclude that, similar to the launch date analysis, there is no major significance in goal amount with canceled campaigns. 
